@@ -1,10 +1,18 @@
-
 import React from "react";
+import Register from "./Register.jsx";
 
 class App extends React.Component {
+  constructor(props) {
+    super();
+    this.state = {};
+  }
+
   render() {
-    const { name } = this.props;
-    return <h1>Hello {name}</h1>;
+    return (
+      <div>
+        <Register />
+      </div>
+    );
   }
 }
 
