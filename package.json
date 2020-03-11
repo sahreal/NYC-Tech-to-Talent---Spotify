@@ -9,7 +9,8 @@
   "scripts": {
     "clean": "rm dist/bundle.js",
     "start": "node server.js",
-    "server": "nodemon server.js"
+    "server": "webpack -d --watch & nodemon server.js",
+    "build": "webpack -d --mode development"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
