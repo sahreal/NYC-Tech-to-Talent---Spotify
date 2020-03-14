@@ -32,10 +32,8 @@ class Register extends Component {
         <h1>Login</h1>
         <form>
           <div>
-            <label for="email">Email</label>
+            <label>Email</label>
             <input
-              type="email"
-              id="email"
               name="email"
               value={this.state.email}
               placeholder="Enter Email"
@@ -43,21 +41,19 @@ class Register extends Component {
             />
           </div>
           <div>
-            <label for="password">Password</label>
+            <label>Password</label>
             <input
-              type="password"
-              id="password"
               name="password"
               value={this.state.password}
               placeholder="Enter Password"
               onChange={this.handleChange}
             />
           </div>
-          <button type="submit" onSubmit={this.handleSubmit}>
-            Login
-          </button>
         </form>
-        <p>No Account? </p>
+        <button type="submit" onClick={this.handleSubmit}>
+          Login
+        </button>
+        <p>No Account?</p>
       </div>
     );
   }
