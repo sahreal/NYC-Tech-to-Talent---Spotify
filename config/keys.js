@@ -4,5 +4,6 @@ const dbPassword =
   "@cluster0-3fpsm.mongodb.net/test?retryWrites=true&w=majority";
 
 module.exports = {
-  mongoURI: dbPassword
+  mongoURI: dbPassword,
+  secretOrKey: "secret"
 };
